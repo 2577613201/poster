@@ -1,0 +1,23 @@
+<!--pages/promotion/share/share.wxml-->
+<scroll-view  class="container page" >
+ 
+  <view class="share">
+ 
+   
+      <view class="list">
+        <view class="desc">       
+          <text class="text">{{share_text}}</text>
+          <image src="{{share_poster}}"></image>
+          <canvas canvas-id="shareCanvas" style="width:{{imgWidth}}px;height:{{imgHeight}}px;position:absolute;left:-2000px"></canvas>
+          <canvas canvas-id="canvas" style="width:{{qrcodeWidth}}px;height:{{qrcodeHeight}}px;position:absolute;left:-500px"></canvas>
+        </view>
+        <view class="btn">
+          <button bindtap='copyText' data-text="{{share_text}}">复制文案</button>
+          <button wx:if="{{saveImgBtn}}" bindtap='saveImg' data-poster="{{share_poster}}" data-link="{{link}}" >保存推广图</button>
+          <button type='primary' class='openSetting' open-type="openSetting"
+    bindopensetting='saveImg' data-poster="{{share_poster}}" data-link="{{link}}" wx:if='{{openSettingBtn}}' >授权并保存图片</button>
+        </view>
+      </view>
+    
+  </view>
+</scroll-view>

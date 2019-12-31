@@ -1,0 +1,102 @@
+/* pages/promotion/share/share.wxss */
+.page{
+  padding-top: 30rpx;
+  background: #fff;
+}
+.share{
+  padding: 0 20rpx 100rpx 20rpx;
+}
+
+.product text{
+  width: 100%;
+  line-height: 92rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: inline-block;
+}
+.link{
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+.link text{
+ border-bottom: none;
+
+}
+.link text:nth-child(1){
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-line;
+  margin-right: 20rpx;
+  line-height: 45rpx;
+}
+.link text:nth-child(2){
+  width:160rpx;
+  height:60rpx;
+  background:#FF7E00;
+  border-radius:10rpx;
+  font-size: 24rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  }
+  .desc{
+    display: flex;
+    flex-direction: column;
+      }
+  .desc text:nth-child(1){
+   line-height: 84rpx;
+   font-size: 26rpx;
+   color: #666;
+  }
+  .desc .text{
+    font-size: 28rpx;
+    padding-bottom: 29rpx;
+    border-bottom: 1rpx solid #ccc;
+  }
+  .desc image{
+    margin: 50rpx 0;
+    align-self: center;
+    width: 355rpx;
+    height: 450rpx;
+
+    border-radius: 10rpx;
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+  }
+  .btn text{ 
+    height: 60rpx;
+    border-radius: 30rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #fff;
+    padding: 0 36rpx;
+  }
+  .btn button:nth-child(1){
+    background: #FFB110;
+    /* margin-right: 30rpx; */
+  }
+   .btn button{
+    height: 60rpx;
+    border-radius: 30rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #fff;
+    padding: 0 36rpx;
+    background: #FF7E00;
+    /* margin-left: 30rpx; */
+    display: inline-block;
+    font-size: 30rpx;
+  }
+  .list{
+    padding-bottom: 30rpx;
+    margin-bottom: 20rpx;
+  }
+  .empty{
+    margin-top: 30rpx;
+    text-align: center;
+    color:  #FF7E00;
+  }
